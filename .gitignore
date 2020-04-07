@@ -1,7 +1,9 @@
 .idea/
 bin/
 log/
+cert/
 data/
 test/
 *.dat
 *.rec
+.DS_Store
