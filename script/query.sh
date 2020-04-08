@@ -67,17 +67,17 @@ while (($i<$len)); do
 done
 
 
-# echo ""
-# echo "drop test:"
+echo ""
+echo "drop test:"
 
-# curl -X POST "http://127.0.0.1:7076/query?db=db1" --data-urlencode 'q=delete from cpu1'
-# curl -X POST "http://127.0.0.1:7076/query?db=db1" --data-urlencode 'q=drop series from cpu2'
-# curl -X POST "http://127.0.0.1:7076/query?db=db2" --data-urlencode 'q=drop measurement cpu3'
-# curl -X POST "http://127.0.0.1:7076/query?db=db2" --data-urlencode 'q=drop series from cpu4'
-# curl -G "http://127.0.0.1:7076/query?db=db1" --data-urlencode 'q=select * from cpu1;'
-# curl -G "http://127.0.0.1:7076/query?db=db1" --data-urlencode 'q=select * from cpu2'
-# curl -G "http://127.0.0.1:7076/query?db=db2" --data-urlencode 'q=select * from cpu3;'
-# curl -G "http://127.0.0.1:7076/query?db=db2" --data-urlencode 'q=select * from cpu4'
-# curl -X POST "http://127.0.0.1:7076/query" --data-urlencode 'q=drop database db1'
-# curl -X POST "http://127.0.0.1:7076/query" --data-urlencode 'q=drop database db2'
-# curl -G "http://127.0.0.1:7076/query" --data-urlencode 'q=show databases'
+curl -X POST "http://127.0.0.1:7076/query?db=db1" --data-urlencode 'q=delete from cpu1'
+curl -X POST "http://127.0.0.1:7076/query?db=db1" --data-urlencode 'q=drop series from cpu2'
+curl -X POST "http://127.0.0.1:7076/query?db=db2" --data-urlencode 'q=drop measurement cpu3'
+curl -X POST "http://127.0.0.1:7076/query?db=db2" --data-urlencode 'q=drop series from cpu4'
+curl -G "http://127.0.0.1:7076/query?db=db1" --data-urlencode 'q=select * from cpu1;'
+curl -G "http://127.0.0.1:7076/query?db=db1" --data-urlencode 'q=select * from cpu2'
+curl -G "http://127.0.0.1:7076/query?db=db2" --data-urlencode 'q=select * from cpu3;'
+curl -G "http://127.0.0.1:7076/query?db=db2" --data-urlencode 'q=select * from cpu4'
+curl -X POST "http://127.0.0.1:7076/query" --data-urlencode 'q=drop database db1'
+curl -X POST "http://127.0.0.1:7076/query" --data-urlencode 'q=drop database db2'
+curl -G "http://127.0.0.1:7076/query" --data-urlencode 'q=show databases'
